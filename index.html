@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background test</title>
+<link rel="stylesheet" type="text/css" href="style.css"></link>
+<script>
+// requestAnim shim layer by Paul Irish
+window.requestAnimFrame = (function(){
+    return  window.requestAnimationFrame       || 
+        window.webkitRequestAnimationFrame || 
+        window.mozRequestAnimationFrame    || 
+        window.oRequestAnimationFrame      || 
+        window.msRequestAnimationFrame     || 
+        function(/* function */ callback, /* DOMElement */ element){
+            window.setTimeout(callback, 1000 / 60);
+        };
+})();
+</script>
+<script src="particles.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div id="frame">
+		<header>
+			<h1>Header</h1>
+		</header>
+	</div>
+</div>
+</body>
+<script>
+Particles.begin();
+</script>
+</html>
