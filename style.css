@@ -10,11 +10,13 @@ h1 {
 
 body {
     background: -webkit-canvas(background) 100% 100%;
+	background-color: red;
 	min-height: 100%;
 }
 
 div#container {
-	width: 1024px;
+	max-width: 1024px;
+	width: 80%;
 	margin: 0 auto;
 	padding-top: 20px;
 }
